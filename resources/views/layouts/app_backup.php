@@ -21,14 +21,10 @@
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
 
-    <style type="text/css">
-        body { background-color: #F6F6F6; }
-    </style>
 </head>
-
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top" id="flat-nav">
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -41,20 +37,19 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <!-- <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        <!-- {{ config('app.name', 'Laravel') }} -->
                         Leihen
-                    </a> -->
+                    </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-<!--                     <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">
 
-                    </ul> -->
+                    </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <!-- <ul class="nav navbar-nav navbar-right"> -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @guest
