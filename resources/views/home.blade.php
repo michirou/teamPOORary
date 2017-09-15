@@ -11,15 +11,14 @@
                     <a href="/view_transaction">View Transactions from Peers</a>
                 </div>
                 <div class="panel-body">
-                    <h3>
-                        @foreach ($user->posts as $post)
+                    @foreach ($user->posts as $post)
+                        <h3>
                             {{ $user->username }}
                             {{ $post->type }}
                             {{ $post->interest_rate }}
                             {{ $post->deadline }}
-                            <br>
-                        @endforeach
-                    </h3>
+                        </h3>
+                    @endforeach
                 </div>
             </div>
         </div>

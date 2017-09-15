@@ -10,148 +10,87 @@
                 </div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="/process">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('account_name') ? ' has-error' : '' }}">
-                            <label for="account_name" class="col-md-4 control-label">Account Name</label>
+                        <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
+                            <label for="type" class="col-md-4 control-label">Type</label>
 
                             <div class="col-md-6">
-                                <input id="account_name" type="text" class="form-control" name="account_name" value="{{ old('account_name') }}" required autofocus>
+                                <input id="type" type="text" class="form-control" name="type" value="{{ old('type') }}" required autofocus>
 
-                                @if ($errors->has('account_name'))
+                                @if ($errors->has('type'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('account_name') }}</strong>
+                                        <strong>{{ $errors->first('type') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('cardnumber') ? ' has-error' : '' }}">
-                            <label for="cardnumber" class="col-md-4 control-label">Card Number</label>
+                        <div class="form-group{{ $errors->has('interest_rate') ? ' has-error' : '' }}">
+                            <label for="interest_rate" class="col-md-4 control-label">Interest Rate</label>
 
                             <div class="col-md-6">
-                                <input id="cardnumber" type="text" class="form-control" name="cardnumber" value="{{ old('cardnumber') }}" required autofocus>
+                                <input id="interest_rate" type="integer" min="0" max="100" class="form-control" name="interest_rate" value="{{ old('interest_rate') }}" required autofocus>
 
-                                @if ($errors->has('cardnumber'))
+                                @if ($errors->has('interest_rate'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('cardnumber') }}</strong>
+                                        <strong>{{ $errors->first('interest_rate') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                            <label for="username" class="col-md-4 control-label">Username</label>
+                         <div class="form-group{{ $errors->has('deadline') ? ' has-error' : '' }}">
+                            <label for="deadline" class="col-md-4 control-label">Deadline</label>
 
                             <div class="col-md-6">
-                                <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+                                <input id="deadline" type="date" class="form-control" name="deadline" value="{{ old('deadline') }}" required autofocus>
 
-                                @if ($errors->has('username'))
+                                @if ($errors->has('deadline'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('username') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                         <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
-                            <label for="address" class="col-md-4 control-label">Address</label>
-
-                            <div class="col-md-6">
-                                <input id="address" type="text" class="form-control" name="address" value="{{ old('address') }}" required autofocus>
-
-                                @if ($errors->has('address'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('address') }}</strong>
+                                        <strong>{{ $errors->first('deadline') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
                         
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                        <div class="form-group{{ $errors->has('meeting_place') ? ' has-error' : '' }}">
+                            <label for="meeting_place" class="col-md-4 control-label">Meeting Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                <input id="meeting_place" type="text" class="form-control" name="meeting_place" value="{{ old('meeting_place') }}">
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('meeting_place'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('meeting_place') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('work') ? ' has-error' : '' }}">
-                            <label for="work" class="col-md-4 control-label">Work</label>
+                        <div class="form-group{{ $errors->has('amount') ? ' has-error' : '' }}">
+                            <label for="amount" class="col-md-4 control-label">Amount to be lent/borrowed</label>
 
                             <div class="col-md-6">
-                                <input id="work" type="text" class="form-control" name="work" value="{{ old('work') }}" required autofocus>
+                                <input id="amount" type="text" class="form-control" name="amount" value="{{ old('work') }}" required autofocus>
 
-                                @if ($errors->has('work'))
+                                @if ($errors->has('amount'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('work') }}</strong>
+                                        <strong>{{ $errors->first('amount') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('salary') ? ' has-error' : '' }}">
-                            <label for="salary" class="col-md-4 control-label">Monthly Salary</label>
-
-                            <div class="col-md-6">
-                                <input id="salary" type="text" class="form-control" name="salary" value="{{ old('salary') }}" required autofocus>
-
-                                @if ($errors->has('salary'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('salary') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('numyears_working') ? ' has-error' : '' }}">
-                            <label for="numyears_working" class="col-md-4 control-label">Number of Years Working</label>
-
-                            <div class="col-md-6">
-                                <input id="numyears_working" type="number" class="form-control" name="numyears_working" value="{{ old('numyears_working') }}" required autofocus>
-
-                                @if ($errors->has('numyears_working'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('numyears_working') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" value="{{ old('password') }}" required autofocus>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top: 5%;">
                             <div class="col-md-6 col-md-offset-4">
 
-                                <button type="submit" class="btn btn-default" id="flat-btn" value="Register">
-                                    <span>Register</span>
+                                <button type="submit" class="btn btn-default" id="flat-btn" value="Add">
+                                    <span>Add</span>
+                                </button>
+                                <button type="reset" class="btn btn-default" id="flat-btn" value="Reset">
+                                    <span>Reset</span>
                                 </button>
                             </div>
                         </div>

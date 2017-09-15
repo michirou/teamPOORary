@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use User;
+use Post;
 
 class PostController extends Controller
 {
@@ -13,7 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        
+        return view('transaction/create_transaction');
     }
 
     /**
@@ -21,9 +24,20 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $user_id = Auth::id();
+
+        Post::insert([
+            'user_id' => $user_id,
+            'type' => $data['type'],
+            'interest_rate' => $data['interest_rate'],
+            'deadline' => $data['deadline'],
+            'meeting_place' => "meeting_place",
+            'amount' => $data['amount'], //regex
+        ]);
+
+        return redirect('/home');
     }
 
     /**
