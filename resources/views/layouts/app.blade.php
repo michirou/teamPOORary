@@ -11,15 +11,13 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- <title>temp</title> -->
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
-    
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
    
-
+    <!-- Scripts -->
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
 
 </head>
 <body>

@@ -11,6 +11,14 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+       
+        <!-- Scripts -->
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/welcome.js') }}"></script>
+
         <style>
             html, body {
                 /*background-color: #fff;*/
@@ -79,11 +87,12 @@
                 /*margin-bottom: 30px;*/
             }
         </style>
+
     </head>
     <!-- <body style="background-color: #FF7055; color: #FFFFF7;"> -->
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+          <!--   @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -92,18 +101,21 @@
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
-            @endif
+            @endif -->
 
             <div class="content">
                 <div class="title m-b-md">
                     <span>Leihen</span>
                 </div>
-                <div class="desc">
-                    <span>Borrow anytime. anywhere. At your convenience.</span>
+                
+                <div class="btn-options">
+                    <div class="btn-login-holder">
+                        <input type="button" class="btn btn-login" name="login" value="Login" />
+                    </div>
+                    <div class="btn-signup-holder">
+                        <input type="button" class="btn btn-signup" name="signup" value="Sign up" />
+                    </div>
                 </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">asd</div>
             </div>
         </div>
     </body>
