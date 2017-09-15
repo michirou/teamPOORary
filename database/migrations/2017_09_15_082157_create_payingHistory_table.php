@@ -15,8 +15,8 @@ class CreatePayingHistoryTable extends Migration
     {
         Schema::create('payingHistory', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('transaction-date');
-            $table->string('transaction-rate');
+            $table->date('transaction_date');
+            $table->string('transaction_rate');
             $table->timestamps();
         });
     }

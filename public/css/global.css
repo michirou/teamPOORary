@@ -1,0 +1,25 @@
+.panel
+	{ border: transparent; }
+
+.panel > .panel-heading, .panel-footer
+	{
+		background-color: #4D4D4D;
+		color: white;
+	}
+
+.full-height
+	{
+    	height: 100vh;
+    }
+
+.flex-center
+	{
+		align-items: center;
+		/*display: flex;*/
+		justify-content: center;
+    }
+
+.position-ref
+	{
+		position: relative;
+	}
