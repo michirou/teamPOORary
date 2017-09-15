@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminTable extends Migration
+class CreatePayingHistoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateAdminTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin', function (Blueprint $table) {
-            $table->increments('id', 11);
-            $table->string('collector_name', 60);
-            $table->string('bank-address', 60);
-            $table->rememberToken();
+        Schema::create('payingHistory', function (Blueprint $table) {
+            $table->increments('id');
+            $table->date('transaction-date');
+            $table->string('transaction-rate');
             $table->timestamps();
         });
     }
@@ -29,6 +28,7 @@ class CreateAdminTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin');
+        Schema::dropIfExists('payingHistory');
     }
 }
+
