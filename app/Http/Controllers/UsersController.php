@@ -15,7 +15,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+     
     }
 
     /**
@@ -83,4 +83,56 @@ class UsersController extends Controller
     {
         //
     }
-}
+
+    public function getAccount($acc_num){
+        $acc_details = $this->connectAPI();
+
+        return $acc_details;
+        
+        // $like = new Like;
+        // $like->post_id = $post_id;
+        // $like->user_id = Auth::user()->id;
+        // $like->save();
+
+        // $post = Post::find($post_id);
+        // $likers = array();
+        // foreach($post->likes as $like){
+        //     $likers[] = array(
+        //         'username'=>$like->liker->username,
+        //         'name'=>$like->liker->name
+        //         );
+        // }
+        // return $likers;
+    }
+
+    public function connectAPI(){
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => "https://api-uat.unionbankph.com/hackathon/sb/accounts/100760327934",
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => "",
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 30,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => "GET",
+          CURLOPT_HTTPHEADER => array(
+            "accept: application/json",
+            "x-ibm-client-id: 4d3cb736-9082-4676-9e42-fdeed3f20aa3",
+            "x-ibm-client-secret: lU4rN2hK1mM8dV4sA0xR6fG0xP2pE5pL3gS4wU2xQ8nP2hR1pC"
+          ),
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+          echo "cURL Error #:" . $err;
+        } else {
+          return $response;
+        }
+    }
+    }
+

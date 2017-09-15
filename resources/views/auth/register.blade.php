@@ -27,6 +27,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('accountname') ? ' has-error' : '' }}">
+                            <label for="accountname" class="col-md-4 control-label">Account Name</label>
+
+                            <div class="col-md-6">
+                                <input id="accountname" type="text" class="form-control" name="accountname" value="{{ old('accountname') }}" required autofocus>
+
+                                @if ($errors->has('accountname'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('accountname') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
                             <label for="username" class="col-md-4 control-label">Username</label>
 
@@ -147,4 +161,5 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('js/register.js') }}"></script>
 @endsection
