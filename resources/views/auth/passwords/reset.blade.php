@@ -4,8 +4,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
+            <div class="panel panel-default" id="flat-panel">
+                <div class="panel-heading">
+                    <!-- <span>Reset Password</span> -->
+                </div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
@@ -56,8 +58,8 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Reset Password
+                                <button type="submit" class="btn btn-default" id="flat-btn">
+                                    <span>Reset Password</span>
                                 </button>
                             </div>
                         </div>
