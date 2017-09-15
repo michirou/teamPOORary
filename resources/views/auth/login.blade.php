@@ -69,14 +69,16 @@
                         </div> -->
 
                         <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-default" id="flat-btn" style="width: 50%; margin-top: 10%;">
+                            <div class="col-md-8 col-md-offset-2">
+                                <button type="submit" class="btn btn-default" id="flat-btn" style="width: 50%; margin-top: 5%;">
                                     <span>Login</span>
                                 </button>
 
-                                <!-- <a id="btn-link" class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a> -->
+                                <div>
+                                    <a id="btn-link" class="btn btn-link" href="{{ route('password.request') }}">
+                                        <span style="font-size: 80%;">Forgot password?</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </form>
