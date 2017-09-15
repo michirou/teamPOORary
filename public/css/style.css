@@ -1,0 +1,23 @@
+.btn-login
+	{
+		font-weight: bold;
+		background-color: #7C5908;
+		border: 1px solid #7C5908;
+		width: 50%;
+		height: 50%;
+		font-size: 5vh;
+		margin: 2%;
+	}
+
+.btn-login:hover
+	{
+		/*background-color: #FCB410;*/
+		/*border: 1px solid #7C5908;*/
+	}
+
+.btn-signup
+	{
+		font-weight: bold;
+		background-color: #7C642D;
+		border: 1px solid #7C642D;
+	}
