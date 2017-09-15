@@ -19,6 +19,10 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/create_transaction', 'PostController@index');
+Route::get('/process', 'PostController@create');
+
 Route::get('/user/get/{acc_num}', 'UsersController@getAccount');
 
 Route::get('/make_transaction', 'PostController@index');

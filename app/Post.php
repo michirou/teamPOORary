@@ -15,4 +15,8 @@ class Post extends Model
     public function returnPost(){
     	return $this->belongsTo('App\User', 'user_id');
     }
+
+    public function bidder(){
+    	return $this->belongsTo('App\User', 'user_id');
+    }
 }

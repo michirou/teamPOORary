@@ -189,7 +189,12 @@
                             <!-- <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                                    <input type="password" class="form-control" name="username" id="username" placeholder="Password" aria-describedby="#pass-addon" />
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" value="{{ old('password') }}" aria-describedby="#pass-addon" />
+                                     @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
                                 </div>
                             </div> -->
                         </div>
