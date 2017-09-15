@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBorrowsTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateBorrowsTable extends Migration
      */
     public function up()
     {
-        Schema::create('borrows', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->time('borrow_time');
-            $table->date('borrow_date');
-            $table->string('borrow_place');
+            $table->string('type');
             $table->string('interest_rate');
-            $table->string('borrower');
-            $table->string('lender');
+            $table->date('deadline');
+            $table->string('meeting_place');
+            $table->string('amount');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateBorrowsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('borrows');
+        Schema::dropIfExists('posts');
     }
 }
