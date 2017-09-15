@@ -17,6 +17,19 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/get/{acc_num}', 'UsersController@getAccount');
 
+Route::get('/make_transaction', 'PostController@index');
+
+
+/*static palang*/
+Route::get('/home2', function() {
+    return view('home2');
+
+});
+/*for testing*/
+Route::get('/create', function() {
+	return view('posts.addPost');
+});

@@ -6,12 +6,26 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default" id="flat-panel">
                 <div class="panel-heading">
-                <span>Register</span>
+                <span>Create Transaction</span>
                 </div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
+
+                        <div class="form-group{{ $errors->has('account_name') ? ' has-error' : '' }}">
+                            <label for="account_name" class="col-md-4 control-label">Account Name</label>
+
+                            <div class="col-md-6">
+                                <input id="account_name" type="text" class="form-control" name="account_name" value="{{ old('account_name') }}" required autofocus>
+
+                                @if ($errors->has('account_name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('account_name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group{{ $errors->has('cardnumber') ? ' has-error' : '' }}">
                             <label for="cardnumber" class="col-md-4 control-label">Card Number</label>

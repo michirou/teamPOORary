@@ -7,16 +7,19 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Dashboard
-                    <a href="make_transaction">Make Transaction</a>
+                    <a href="/create_transaction">Create Transaction</a>
+                    <a href="/view_transaction">View Transactions from Peers</a>
                 </div>
                 <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    
+                    <h3>
+                        @foreach ($user->posts as $post)
+                            {{ $user->username }}
+                            {{ $post->type }}
+                            {{ $post->interest_rate }}
+                            {{ $post->deadline }}
+                            <br>
+                        @endforeach
+                    </h3>
                 </div>
             </div>
         </div>
