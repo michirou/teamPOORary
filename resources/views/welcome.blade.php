@@ -23,7 +23,8 @@
             html, body {
                 /*background-color: #fff;*/
                 /*background-color: #FF7055;*/
-                background-color: #FCB410;
+                /*background-color: #FCB410;*/
+                background-color: #1BA39C;
                 /*color: #636b6f;*/
                 color: #FFFFF7;
                 font-family: 'Raleway', sans-serif;
@@ -109,12 +110,14 @@
                 </div>
                 
                 <div class="btn-options">
-                    <div class="btn-login-holder">
-                        <input type="button" class="btn btn-login" name="login" value="Login" />
+                    <div style="margin-top: 25%;"><a href="{{ route('login') }}" class="btn btn-login"><span>Login</span></a></div>
+                    <div><a href="{{ route('register') }}" class="btn btn-register"><span>Register</span></a></div>
+                    <!-- <div class="btn-login-holder">
+                        <input type="button" class="btn btn-login" name="login" value="Login" onclick="login_func()" />
                     </div>
                     <div class="btn-signup-holder">
                         <input type="button" class="btn btn-signup" name="signup" value="Sign up" />
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
