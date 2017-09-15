@@ -1,8 +1,6 @@
 .btn-login
 	{
 		font-weight: bold;
-		/*background-color: #7C5908;*/
-		/*border: 1px solid #7C5908;*/
 		background-color: #10635F;
 		border: 1px solid #10635F;
 		width: 50%;
@@ -13,8 +11,6 @@
 
 .btn-login:hover
 	{
-		/*background-color: #7C642D;*/
-		/*background-color: #523D1F;*/
 		background-color: #0c4946;
 		border-color: #0c4946;
 	}
@@ -36,4 +32,17 @@
 	{
 		background-color: #10635F;
 		border: 1px solid #10635F;
+	}
+
+#flat-panel
+	{
+		border: 1px solid #1BA39C;
+	}
+
+#flat-panel > .panel-heading
+	{
+		color: white;
+		font-weight: bold;
+		border: transparent;
+		background-color: #1BA39C;
 	}

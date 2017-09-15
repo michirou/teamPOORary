@@ -25,7 +25,6 @@ class CreateUsersTable extends Migration
             $table->string('card-number', 16);
             $table->string('social-media-acc');
             $table->string('work');
-            $table->string('type-of-work');
             $table->string('salary');
             $table->string('numyears-working');
             $table->string('credit-score');
