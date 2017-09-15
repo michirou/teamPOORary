@@ -13,7 +13,7 @@ function verifyAccount(){
 			console.info(data);
 			console.log(data[0].account_name);
 
-			$("#accountname").val(data[0].account_name);
+			$("#account_name").val(data[0].account_name);
 		}
 	});
 }

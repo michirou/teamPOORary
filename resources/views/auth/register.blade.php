@@ -17,19 +17,6 @@
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('account_name') ? ' has-error' : '' }}">
-                            <label for="account_name" class="col-md-4 control-label">Account Name</label>
-
-                            <div class="col-md-6">
-                                <input id="account_name" type="text" class="form-control" name="account_name" value="{{ old('account_name') }}" required autofocus>
-
-                                @if ($errors->has('account_name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('account_name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
 
                         <div class="form-group{{ $errors->has('cardnumber') ? ' has-error' : '' }}">
                             <!-- <label for="cardnumber" class="col-md-4 control-label">Card Number</label>
@@ -51,15 +38,15 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('accountname') ? ' has-error' : '' }}">
-                            <label for="accountname" class="col-md-4 control-label">Account Name</label>
+                        <div class="form-group{{ $errors->has('account_name') ? ' has-error' : '' }}">
+                            <label for="account_name" class="col-md-4 control-label">Account Name</label>
 
                             <div class="col-md-6">
-                                <input id="accountname" type="text" class="form-control" name="accountname" value="{{ old('accountname') }}" required autofocus>
+                                <input id="account_name" type="text" class="form-control" name="account_name" value="{{ old('account_name') }}" required autofocus>
 
-                                @if ($errors->has('accountname'))
+                                @if ($errors->has('account_name'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('accountname') }}</strong>
+                                        <strong>{{ $errors->first('account_name') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -186,37 +173,41 @@
                         </div>
 
                          <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <!-- <label for="password" class="col-md-4 control-label">Password</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" value="{{ old('password') }}" required autofocus>
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                    <input id="password" type="password" class="form-control" name="password" value="{{ old('password') }}" required autofocus placeholder="Password" aria-describedby="#pass-addon" >
+                                </div>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
-                            </div> -->
-                            <div class="col-xs-10 col-xs-offset-1">
+                            </div>
+                            <!-- <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
                                     <input type="password" class="form-control" name="username" id="username" placeholder="Password" aria-describedby="#pass-addon" />
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="form-group">
-                           <!--  <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="conpass-addon"><span class="glyphicon glyphicon-repeat"></span></span>
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Confirm Password" aria-describedby="#conpass-addon">
+                                </div>
+                            </div>
+                            <!-- <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="conpass-addon"><span class="glyphicon glyphicon-repeat"></span></span>
                                     <input type="password" class="form-control" name="conpassword" id="conpassword" placeholder="Confirm Password" aria-describedby="#conpass-addon" />
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="form-group" style="margin-top: 5%;">
