@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('first-name', 60);
             $table->string('middle-name', 60);
             $table->string('last-name', 60);
+            $table->string('email', 20);
             $table->string('address');
             $table->string('card-number', 16);
             $table->string('social-media-acc');
