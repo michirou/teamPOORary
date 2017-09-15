@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class LoanersTable extends Migration
+class CreateAdminTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class LoanersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
+        Schema::create('admin', function (Blueprint $table) {
+            $table->increments('id', 11);
+            $table->string('collector_name', 60);
+            $table->string('bank-address', 60);
             $table->rememberToken();
             $table->timestamps();
+        });
     }
 
     /**
@@ -29,6 +29,6 @@ class LoanersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('admin');
     }
 }
