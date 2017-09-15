@@ -3,10 +3,11 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2 flex-center position-ref full-height">
             <div class="panel panel-default" id="flat-panel">
                 <div class="panel-heading">
-                    <span>Login</span>
+                    <!-- <span>Login</span> -->
+                    <span class="glyphicon glyphicon-user"></span>
                 </div>
 
                 <div class="panel-body">
@@ -53,11 +54,11 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
+                                <button type="submit" class="btn btn-default" id="flat-btn">
+                                    <span>Login</span>
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a id="btn-link" class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>

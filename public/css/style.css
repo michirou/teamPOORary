@@ -37,6 +37,7 @@
 #flat-panel
 	{
 		border: 1px solid #1BA39C;
+		background-color: #FEFEFE;
 	}
 
 #flat-panel > .panel-heading
@@ -45,4 +46,31 @@
 		font-weight: bold;
 		border: transparent;
 		background-color: #1BA39C;
+	}
+
+#btn-link
+	{
+		color: #1BA39C;
+	}
+
+#flat-btn
+	{
+		border: 1px solid #1BA39C;
+	}
+
+#flat-btn:hover
+	{
+		background-color: #1BA39C;
+		border: 1px solid #1BA39C;
+	}
+
+#flat-btn > span
+	{
+		color: #1BA39C;
+		font-weight: bold;
+	}
+
+#flat-btn:hover > span
+	{
+		color: white;
 	}
