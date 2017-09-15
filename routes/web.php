@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*static palang*/
+Route::get('/home2', function() {
+    return view('home2');
+
+});
+/*for testing*/
+Route::get('/create', function() {
+	return view('posts.addPost');
+});
