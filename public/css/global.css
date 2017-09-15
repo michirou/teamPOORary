@@ -1,0 +1,8 @@
+.panel
+	{ border: transparent; }
+
+.panel > .panel-heading, .panel-footer
+	{
+		background-color: #4D4D4D;
+		color: white;
+	}

@@ -1,8 +1,8 @@
 .btn-login
 	{
 		font-weight: bold;
-		background-color: #7C5908;
-		border: 1px solid #7C5908;
+		background-color: #10635F;
+		border: 1px solid #10635F;
 		width: 50%;
 		height: 50%;
 		font-size: 5vh;
@@ -11,13 +11,38 @@
 
 .btn-login:hover
 	{
-		/*background-color: #FCB410;*/
-		/*border: 1px solid #7C5908;*/
+		background-color: #0c4946;
+		border-color: #0c4946;
 	}
 
-.btn-signup
+.btn-login > span, .btn-register > span
+	{
+		color: #F7F7F7;
+	}
+
+.btn-register
 	{
 		font-weight: bold;
-		background-color: #7C642D;
-		border: 1px solid #7C642D;
+		background-color: rgba(16, 99, 95, 0.5);
+		border: 1px solid rgba(16, 99, 95, 0.5);
+
+	}
+
+.btn-register:hover
+	{
+		background-color: #10635F;
+		border: 1px solid #10635F;
+	}
+
+#flat-panel
+	{
+		border: 1px solid #1BA39C;
+	}
+
+#flat-panel > .panel-heading
+	{
+		color: white;
+		font-weight: bold;
+		border: transparent;
+		background-color: #1BA39C;
 	}
