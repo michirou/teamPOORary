@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default" id="flat-panel">
                 <div class="panel-heading">
-                <span>Register</span>
+                <span>Create Transaction</span>
                 </div>
 
                 <div class="panel-body">

@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use User;
-use Borrow;
 
-class UsersController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +13,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -47,7 +45,7 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-           
+        //
     }
 
     /**
