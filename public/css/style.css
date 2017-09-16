@@ -74,3 +74,10 @@
 	{
 		color: white;
 	}
+
+#feed-panel
+	{
+		border-radius: 0;
+		border: transparent;
+		width: 99.8%;
+	}
