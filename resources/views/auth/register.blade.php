@@ -35,7 +35,7 @@
                             <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="card-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
-                                    <input type="text" class="form-control" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-describedby="#card-addon" />
+                                    <input type="text" class="form-control" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-describedby="#card-addon" autofocus />
                                 </div>
                             </div>
                         </div>

@@ -43,7 +43,7 @@
                             <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                                    <input type="password" class="form-control" name="username" id="username" placeholder="Password" aria-describedby="#pass-addon" />
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" aria-describedby="#pass-addon" />
                                 </div>
                             </div>
                             <!-- <label for="password" class="col-md-4 control-label">Password</label>
