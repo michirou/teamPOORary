@@ -23,8 +23,25 @@
 
     <style type="text/css">
         body { background-color: #F6F6F6; }
+
+        .navbar-icons{
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        .icons{
+            text-align: center;
+            margin-top: 15px;
+            size: 19pt;
+            width: 25%;
+        }
     </style>
 </head>
+
+<?php
+    $flag = 1;
+    
+?>
 
 <body>
     <div id="app">
@@ -33,12 +50,27 @@
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <ul class="navbar-icons">
+                        <li class="col-s-5">
+                            <?php
+                                if($flag==1){
+                            ?>
+                                <span class="glyphicon glyphicon-list-alt icons"></span>
+                                <span class="glyphicon glyphicon-globe icons"></span>
+                                <span class="glyphicon glyphicon-bookmark icons"></span>    
+
+                            <?php
+                                }
+                            ?>
+                           
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                                <span class="sr-only">Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                             </button>   
+                        </li>
+                     </ul>
 
                     <!-- Branding Image -->
                     <!-- <a class="navbar-brand" href="{{ url('/') }}">
