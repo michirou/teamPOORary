@@ -12,7 +12,8 @@
 
                 <div class="panel-body" style="text-align: center;">
                     <div style="color: #10635F; font-size: 300%; margin: 10%;">
-                        <span class="glyphicon glyphicon-piggy-bank"></span>
+                        <!-- <span class="glyphicon glyphicon-piggy-bank"></span> -->
+                        <a href="/" style="text-decoration: none;"><span style="font-size: 200%; color: #10635F;">ə</span></a>
                     </div>
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
