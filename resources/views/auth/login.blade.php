@@ -12,7 +12,8 @@
 
                 <div class="panel-body" style="text-align: center;">
                     <div style="color: #10635F; font-size: 300%; margin: 10%;">
-                        <span class="glyphicon glyphicon-piggy-bank"></span>
+                        <!-- <span class="glyphicon glyphicon-piggy-bank"></span> -->
+                        <a href="/" style="text-decoration: none;"><span style="font-size: 200%; color: #10635F;">ə</span></a>
                     </div>
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
@@ -42,7 +43,7 @@
                             <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                                    <input type="password" class="form-control" name="username" id="username" placeholder="Password" aria-describedby="#pass-addon" />
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" aria-describedby="#pass-addon" />
                                 </div>
 
                                 @if ($errors->has('password'))

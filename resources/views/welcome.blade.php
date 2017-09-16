@@ -27,9 +27,9 @@
                 background-color: #1BA39C;
                 /*color: #636b6f;*/
                 color: #FFFFF7;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Open sans', sans-serif;
                 /*font-weight: 100;*/
-                font-weight: bold;
+                /*font-weight: bold;*/
                 height: 100vh;
                 margin: 0;
             }
@@ -106,7 +106,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <span>Leihen</span>
+                    <span>əfsana</span>
                 </div>
                 
                 <div class="btn-options">

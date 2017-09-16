@@ -11,7 +11,9 @@
 
                  <div class="panel-body" style="text-align: center;">
                     <div style="color: #10635F; font-size: 300%; margin: 10%;">
-                        <span class="glyphicon glyphicon-piggy-bank"></span>
+                        <!-- <span class="glyphicon glyphicon-piggy-bank"></span> -->
+                        <a href="/" style="text-decoration: none;"><span style="font-size: 200%; color: #10635F;">ə</span></a>
+                        
                     </div>
 
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -33,13 +35,13 @@
                             <div class="col-xs-10 col-xs-offset-1">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="card-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
-                                    <input type="text" class="form-control" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-describedby="#card-addon" />
+                                    <input type="text" class="form-control" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-describedby="#card-addon" autofocus />
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group{{ $errors->has('account_name') ? ' has-error' : '' }}">
-                            <label for="account_name" class="col-md-4 control-label">Account Name</label>
+                            <!-- <label for="account_name" class="col-md-4 control-label">Account Name</label>
 
                             <div class="col-md-6">
                                 <input id="account_name" type="text" class="form-control" name="account_name" value="{{ old('account_name') }}" required autofocus>
@@ -49,6 +51,12 @@
                                         <strong>{{ $errors->first('account_name') }}</strong>
                                     </span>
                                 @endif
+                            </div> -->
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="account-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                    <input type="text" class="form-control" name="account_name" id="account_name" placeholder="Account Name" aria-describedby="#account-addon" />
+                                </div>
                             </div>
                         </div>
 
@@ -65,8 +73,8 @@
                                 @endif
                             </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="user-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="user-addon"><span class="glyphicon glyphicon-user"></span></span> -->
                                     <input type="text" class="form-control" name="username" id="username" placeholder="Username" aria-describedby="#user-addon" />
                                 </div>
                             </div>
@@ -85,8 +93,8 @@
                                 @endif
                             </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="address-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="address-addon"><span class="glyphicon glyphicon-map-marker"></span></span> -->
                                     <input type="text" class="form-control" name="address" id="address" placeholder="Address" aria-describedby="#address-addon" />
                                 </div>
                             </div>
@@ -105,8 +113,8 @@
                                 @endif
                             </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="email-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="email-addon"><span class="glyphicon glyphicon-envelope"></span></span> -->
                                     <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" aria-describedby="#email-addon" />
                                 </div>
                             </div>
@@ -125,8 +133,8 @@
                                 @endif
                             </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="work-addon"><span class="glyphicon glyphicon-certificate"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="work-addon"><span class="glyphicon glyphicon-certificate"></span></span> -->
                                     <input type="text" class="form-control" name="work" id="work" placeholder="Work" aria-describedby="#work-addon" />
                                 </div>
                             </div>
@@ -145,8 +153,8 @@
                                 @endif
                             </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="salary-addon"><span class="glyphicon glyphicon-info-sign"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="salary-addon"><span class="glyphicon glyphicon-info-sign"></span></span> -->
                                     <input type="text" class="form-control" name="salary" id="salary" placeholder="Monthly Salary" aria-describedby="#salary-addon" />
                                 </div>
                             </div>
@@ -165,8 +173,8 @@
                                 @endif
                             </div> -->
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="numyears_working-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="numyears_working-addon"><span class="glyphicon glyphicon-calendar"></span></span> -->
                                     <input type="text" class="form-control" name="numyears_working" id="numyears_working" placeholder="Number of Years Working" aria-describedby="#numyears_working-addon" />
                                 </div>
                             </div>
@@ -175,8 +183,8 @@
                          <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span> -->
                                     <input id="password" type="password" class="form-control" name="password" value="{{ old('password') }}" required autofocus placeholder="Password" aria-describedby="#pass-addon" >
                                 </div>
 
@@ -202,8 +210,8 @@
                         <div class="form-group">
 
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="conpass-addon"><span class="glyphicon glyphicon-repeat"></span></span>
+                                <div class="class-form-group">
+                                    <!-- <span class="input-group-addon" id="conpass-addon"><span class="glyphicon glyphicon-repeat"></span></span> -->
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Confirm Password" aria-describedby="#conpass-addon">
                                 </div>
                             </div>
@@ -216,7 +224,7 @@
                         </div>
 
                         <div class="form-group" style="margin-top: 5%;">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-8 col-md-offset-2">
 
                                 <button type="submit" class="btn btn-default" id="flat-btn" value="Register">
                                     <span>Register</span>
