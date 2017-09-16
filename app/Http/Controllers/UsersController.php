@@ -88,21 +88,7 @@ class UsersController extends Controller
         $acc_details = $this->connectAPI();
 
         return $acc_details;
-        
-        // $like = new Like;
-        // $like->post_id = $post_id;
-        // $like->user_id = Auth::user()->id;
-        // $like->save();
-
-        // $post = Post::find($post_id);
-        // $likers = array();
-        // foreach($post->likes as $like){
-        //     $likers[] = array(
-        //         'username'=>$like->liker->username,
-        //         'name'=>$like->liker->name
-        //         );
-        // }
-        // return $likers;
+    
     }
 
     public function connectAPI(){
