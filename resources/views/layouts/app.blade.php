@@ -47,9 +47,9 @@
                     <!-- Collapsed Hamburger -->
                     <ul class="navbar-icons">
                         <li class="col-s-5">
-                            <span class="glyphicon glyphicon-list-alt icons"></span>
-                            <span class="glyphicon glyphicon-globe icons"></span>
-                            <span class="glyphicon glyphicon-bookmark icons"></span>
+                            <a href="/home"><span class="glyphicon glyphicon-list-alt icons"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-globe icons"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-bookmark icons"></span></a>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                                 <span class="sr-only">Toggle Navigation</span>
                                 <span class="icon-bar"></span>

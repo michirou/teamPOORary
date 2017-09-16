@@ -29,8 +29,8 @@ Route::get('/make_transaction', 'PostController@index');
 
 
 /*static palang*/
-Route::get('/home2', function() {
-    return view('home2');
+Route::get('/home', function() {
+    return view('home');
 
 });
 /*for testing*/
