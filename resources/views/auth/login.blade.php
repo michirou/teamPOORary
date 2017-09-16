@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<?php 
+    $flag = 0;
+?>
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 flex-center position-ref full-height">
