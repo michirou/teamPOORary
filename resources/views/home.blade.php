@@ -13,73 +13,105 @@
                 </div>
 
                 <div class="panel panel-default" id="feed-panel">
-                        <div class="panel-heading">Person One (to Lend)</div>
+                        <div class="panel-heading">
+                            <span>Person One (to Lend)</span>
+                            <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                        </div>
                         <div class="panel-body">                            
                             Amount: PHP 1000.00<br />
                             Interest: 10%<br />
-                            Meeting Place: Iloilo Convention Center
+                            Meeting Place: Iloilo Convention Center<br />
+                            Deadline: September 20, 2017<br />
                         </div>
                     </div>
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                        <div class="panel-heading">Person One (to Lend)</div>
+                <div class="panel panel-default" id="feed-panel">
+                        <div class="panel-heading">
+                            <span>Person One (to Lend)</span>
+                            <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                        </div>
                         <div class="panel-body">                            
                             Amount: PHP 1000.00<br />
                             Interest: 10%<br />
-                            Meeting Place: Iloilo Convention Center
+                            Meeting Place: Iloilo Convention Center<br />
+                            Deadline: September 24, 2017<br />
                         </div>
                     </div>
 
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                    <div class="panel-heading">Person Two (to Borrow)</div>
+                <div class="panel panel-default" id="feed-panel">
+                    <div class="panel-heading">
+                        <span>Person Two (to Borrow)</span>
+                        <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                    </div>
                     <div class="panel-body">
                         Amount: PHP 500.00<br />
                         Interest: 5%<br />
-                        Meeting Place: SM Iloilo
+                        Meeting Place: SM Iloilo<br />
+                        Deadline: September 25, 2017<br />
                     </div>
                 </div>
 
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                    <div class="panel-heading">Person 3 (to Lend)</div>
+                <div class="panel panel-default" id="feed-panel">
+                    <div class="panel-heading">
+                        <span>Person 3 (to Lend)</span>
+                        <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                    </div>
                     <div class="panel-body">
                         Amount: PHP 10000.00<br />
                         Interest: 15%<br />
-                        Meeting Place: Somewhere else
+                        Meeting Place: Somewhere else<br />
+                        Deadline: September 19, 2017<br />
                     </div>
                 </div>
 
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                    <div class="panel-heading">Person 3 (to Lend)</div>
+                <div class="panel panel-default" id="feed-panel">
+                    <div class="panel-heading">
+                        <span>Person 4 (to Borrow)</span>
+                        <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                    </div>
                     <div class="panel-body">
                         Amount: PHP 10000.00<br />
                         Interest: 15%<br />
-                        Meeting Place: Somewhere else
+                        Meeting Place: Somewhere else<br />
+                        Deadline: September 26, 2017<br />
                     </div>
                 </div>
 
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                    <div class="panel-heading">Person 3 (to Lend)</div>
+                <div class="panel panel-default" id="feed-panel">
+                    <div class="panel-heading">
+                        <span>Person 5 (to Lend)</span>
+                        <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                    </div>
                     <div class="panel-body">
                         Amount: PHP 10000.00<br />
                         Interest: 15%<br />
-                        Meeting Place: Somewhere else
+                        Meeting Place: Somewhere else<br />
+                        Deadline: September 20, 2017<br />
                     </div>
                 </div>
 
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                    <div class="panel-heading">Person 3 (to Lend)</div>
+                <div class="panel panel-default" id="feed-panel">
+                    <div class="panel-heading">
+                        <span>Person 6 (to Borrow)</span>
+                        <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                    </div>
                     <div class="panel-body">
                         Amount: PHP 10000.00<br />
                         Interest: 15%<br />
-                        Meeting Place: Somewhere else
+                        Meeting Place: Somewhere else<br />
+                        Deadline: September 20, 2017<br />
                     </div>
                 </div>
 
-                <div class="panel panel-default" id="feed-panel" style="margin-top: -5%;">
-                    <div class="panel-heading">Person 3 (to Lend)</div>
+                <div class="panel panel-default" id="feed-panel">
+                    <div class="panel-heading">
+                        <span>Person 7 (to Lend)</span>
+                        <div class="pull-right"><span>[&nbsp;<a href="#">View Details</a>&nbsp;]</span></div>
+                    </div>
                     <div class="panel-body">
                         Amount: PHP 10000.00<br />
                         Interest: 15%<br />
-                        Meeting Place: Somewhere else
+                        Meeting Place: Somewhere else<br />
+                        Deadline: September 24, 2017<br />
                     </div>
                 </div>
             </div>
