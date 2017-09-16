@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid" style="margin-top: -1%;">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div style="width: 100%;">
             <div class="panel panel-default" id="flat-panel">
                 <div class="panel-heading" style="overflow: hidden;">
                     <div class="pull-right">
