@@ -45,18 +45,14 @@
                                     <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
                                     <input type="password" class="form-control" name="password" id="password" placeholder="Password" aria-describedby="#pass-addon" />
                                 </div>
-                            </div>
-                            <!-- <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
-                            </div> -->
+                            </div>
+                            
                         </div>
 
 <!--                         <div class="form-group">

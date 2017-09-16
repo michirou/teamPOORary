@@ -37,3 +37,11 @@ Route::get('/home2', function() {
 Route::get('/create', function() {
 	return view('posts.addPost');
 });
+
+Route::get('/lend_money', function() {
+	return view('posts.lend');
+});
+
+Route::get('/borrow_money', function() {
+	return view('posts.borrow');
+});
